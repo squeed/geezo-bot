@@ -1,0 +1,14 @@
+imap:
+  server: "mail.example.com.:993"
+  username: "u"
+  password: "p"
+smtp:
+  server: "mail.example.com.:587"
+  username: "u"
+  password: "p"
+
+main:
+  from: "geezo-bot@example.com"
+  to: "dest@example.com"
+  dbFile: state.db
+  workDir: "images"

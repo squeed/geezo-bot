@@ -1,0 +1,10 @@
+[Unit]
+Wants=geezo-bot.timer
+
+[Service]
+ExecStart=geezo-bot --config=/var/lib/geezo-bot/config.yaml
+RunAsUser=1000
+WorkingDirectory=/var/lib/geezo-bot
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the geezobot every 15 minutes
+
+[Timer]
+Unit=geezo-bot.service
+OnUnitInactiveSec=15m
+RandomizedDelaySec=1m
+
+
+[Install]
+WantedBy=timers.target
